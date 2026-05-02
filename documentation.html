@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marvel Movie Success Visualization Documentation</title>
+  <title>Marvel Movie Performance Visualization Documentation</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <main class="page documentation">
     <header class="hero">
-      <h1>Documentation: Marvel Movie Success Visualization</h1>
+      <h1>Documentation: Marvel Movie Performance Visualization</h1>
       <p>
         This page documents the design process, design rationale, discoveries,
         and final video demonstration for the D3.js visualization.
       </p>
     </header>
+
+    <p style="text-align: center;">
+      <a href="index.html">← Back to Visualization</a>
+    </p>
 
     <section>
       <h2>Data Source</h2>
@@ -38,37 +44,37 @@
     <section>
       <h2>Research Question</h2>
       <p>
-        How do the top 10 Marvel movies change depending on how performance 
+        How do the top 10 Marvel movies change depending on how performance
         is measured across audience ratings, critic scores, and financial metrics?
       </p>
     </section>
 
     <section>
-  <h2>Design Process</h2>
-  <p>
-    The original idea was to rank Marvel movies by one measure of success,
-    such as worldwide gross. This was revised because success can also mean
-    audience approval, critic approval, or financial performance. The final
-    design uses buttons so users can switch between different definitions of
-    performance.
-  </p>
+      <h2>Design Process</h2>
+      <p>
+        The original idea was to rank Marvel movies by one measure of success,
+        such as worldwide gross. This was revised because success can also mean
+        audience approval, critic approval, or financial performance. The final
+        design uses buttons so users can switch between different definitions of
+        performance.
+      </p>
 
-  <p>
-    Because the visualization is based on a familiar bar chart structure, the
-    main design challenge was not the chart type itself, but how the chart would
-    change through interaction. The project focuses on using D3 transitions to
-    update the top 10 movies as the user switches between metrics.
-  </p>
+      <p>
+        Because the visualization is based on a familiar bar chart structure, the
+        main design challenge was not the chart type itself, but how the chart would
+        change through interaction. The project focuses on using D3 transitions to
+        update the top 10 movies as the user switches between metrics.
+      </p>
 
-  <p>
-    Instead of creating several separate charts, one chart updates dynamically.
-    This keeps the page simpler while making the comparison more interactive.
-  </p>
-</section>
+      <p>
+        Instead of creating several separate charts, one chart updates dynamically.
+        This keeps the page simpler while making the comparison more interactive.
+      </p>
+    </section>
 
-      <h3>Sketches</h3>
-      <p>Add photos or scans of sketches here.</p>
-      <!-- Example:
+    <h3>Sketches</h3>
+    <p>Add photos or scans of sketches here.</p>
+    <!-- Example:
       <img src="images/sketch-1.jpg" alt="Early sketch of bar chart layout">
       -->
     </section>
@@ -76,26 +82,26 @@
     <section>
       <h2>Rationale of Design Choices</h2>
       <p>
-       A bar chart was selected because it allows for clear comparison of ranked 
-       values across different categories.Interactive buttons were used to allow users 
-       to switch between metrics, supporting exploration and comparison without overwhelming 
-       the user with multiple charts.
-       Color was used to assign a consistent identity to each movie, allowing users to track 
-       individual films across different metric views.
-       Axis labels were rotated to preserve full movie titles while maintaining readability.
+        A bar chart was selected because it allows for clear comparison of ranked
+        values across different categories.Interactive buttons were used to allow users
+        to switch between metrics, supporting exploration and comparison without overwhelming
+        the user with multiple charts.
+        Color was used to assign a consistent identity to each movie, allowing users to track
+        individual films across different metric views.
+        Axis labels were rotated to preserve full movie titles while maintaining readability.
       </p>
     </section>
 
     <section>
       <h2>Findings</h2>
       <p>
-        The visualization shows that the ranking of Marvel movies changes significantly 
-        depending on the metric used. For example, movies that perform well in worldwide gross 
-        are not always the highest rated by audiences or critics. Similarly, films with large 
+        The visualization shows that the ranking of Marvel movies changes significantly
+        depending on the metric used. For example, movies that perform well in worldwide gross
+        are not always the highest rated by audiences or critics. Similarly, films with large
         budgets do not always produce the highest net revenue.
-        This demonstrates that there is no single definition of “success.” Instead, success 
+        This demonstrates that there is no single definition of “success.” Instead, success
         varies depending on whether it is measured by audience perception, critical reception,
-        or financial performance. Net revenue provided an especially useful comparison, 
+        or financial performance. Net revenue provided an especially useful comparison,
         as it revealed differences between total earnings and actual profitability.
       </p>
     </section>
@@ -107,6 +113,11 @@
       <iframe width="560" height="315" src="YOUR_YOUTUBE_EMBED_LINK" title="YouTube video player" allowfullscreen></iframe>
       -->
     </section>
+
+    <p style="text-align: center;">
+      <a href="index.html">← Back to Visualization</a>
+    </p>
   </main>
 </body>
+
 </html>
