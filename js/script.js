@@ -5,17 +5,17 @@ const metricConfig = {
     suffix: "/10"
   },
   metascore: {
-    label: "Metascore",
+    label: "IMDb Metascore",
     column: "Metascore",
     suffix: "/100"
   },
   rtCritics: {
-    label: "RT Critics",
+    label: "Rotten Tomatoes (Critics)",
     column: "RT Critics",
     suffix: "%"
   },
   rtAudience: {
-    label: "RT Audience",
+    label: "Rotten Tomatoes (Audience)",
     column: "RT Audience",
     suffix: "%"
   },
