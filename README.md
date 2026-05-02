@@ -185,3 +185,4 @@ The final project will include:
 1. A live interactive visualization page
 2. A documentation page explaining the design process and findings
 3. A 2–4 minute narrated YouTube video embedded in the documentation page
+
