@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f6f7fb;
+  color: #1f2937;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+.hero {
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.hero p {
+  max-width: 780px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.metric-button {
+  border: 1px solid #cbd5e1;
+  background: white;
+  color: #1f2937;
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.metric-button:hover,
+.metric-button.active {
+  background: #1f2937;
+  color: white;
+}
+
+.chart-card,
+.documentation section {
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  margin-bottom: 24px;
+}
+
+.chart-card h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+#chart {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/*.bar {
+  fill: #334155;
+}
+
+.bar:hover {
+  fill: #64748b;
+}*/
+
+.axis text {
+  font-size: 12px;
+}
+
+.axis-label {
+  font-size: 13px;
+  fill: #374151;
+}
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: #111827;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0;
+  transition: opacity 150ms ease;
+  max-width: 260px;
+}
+
+.documentation p {
+  line-height: 1.65;
+}

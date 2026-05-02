@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvel Movie Success Visualization</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1>Which Marvel Movie Is the Most Successful?</h1>
+      <p>
+        Use the buttons below to compare the top 10 Marvel movies by ratings,
+        budget, domestic gross, and worldwide gross.
+      </p>
+    </header>
+
+    <section class="controls" aria-label="Chart metric controls">
+      <button class="metric-button active" data-metric="imdb">IMDb</button>
+      <button class="metric-button" data-metric="metascore">Metascore</button>
+      <button class="metric-button" data-metric="rtCritics">RT Critics</button>
+      <button class="metric-button" data-metric="rtAudience">RT Audience</button>
+      <button class="metric-button" data-metric="letterboxd">Letterboxd</button>
+      <button class="metric-button" data-metric="budget">Budget</button>
+      <button class="metric-button" data-metric="domesticGross">Domestic Gross</button>
+      <button class="metric-button" data-metric="worldwideGross">Worldwide Gross</button>
+      <button class="metric-button" data-metric="netRevenue">Net Revenue</button>
+    </section>
+
+    <section class="chart-card">
+      <h2 id="chart-title">Top 10 Marvel Movies by IMDb Rating</h2>
+      <div id="chart"></div>
+    </section>
+
+    <div id="tooltip" class="tooltip" aria-hidden="true"></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
